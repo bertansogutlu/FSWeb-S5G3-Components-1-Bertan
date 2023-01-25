@@ -126,9 +126,9 @@ function haberYapici(arr) {
     const newsP3 = document.createElement("p");
     const newsSpan = document.createElement("span");
 
-    newsDiv.className = 'article';
-    newsPT.className = 'tarih';
-    newsSpan.className = 'expandButton';
+    newsDiv.className = 'articles';
+    newsPT.className = 'article date';
+    newsSpan.className = 'article expandButton';
 
     newsH2.textContent = obj.baslik;
     newsPT.textContent = obj.tarih;
@@ -136,7 +136,16 @@ function haberYapici(arr) {
     newsP2.textContent = obj.ikinciParagraf;
     newsP3.textContent = obj.ucuncuParagraf;
 
-    
+    newsDiv.appendChild(newsH2);
+    newsDiv.appendChild(newsPT);
+    newsDiv.appendChild(newsP1);
+    newsDiv.appendChild(newsP2);
+    newsDiv.appendChild(newsP3);
+    newsDiv.appendChild(newsSpan);
 
+    const body = document.querySelector("body");
+    body.appendChild(newsDiv);
   }
 }
+
+haberYapici(data)
