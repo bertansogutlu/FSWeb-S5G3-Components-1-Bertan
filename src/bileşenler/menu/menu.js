@@ -43,7 +43,7 @@ function menuYapici(arr) {
   for (let item of arr) {
     const menuLi = document.createElement("li");
     menuLi.textContent = item;
-    menuDiv.appendChild(menuLi);
+    menuUl.appendChild(menuLi);
   }
   const menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", (event) => {
