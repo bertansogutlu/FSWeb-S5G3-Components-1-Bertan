@@ -233,10 +233,10 @@ return newsDiv;
 
 }
 
-const body = document.querySelector("body");
+const articles = document.querySelector(".articles");
 
 for (let datum of data) {
-  body.appendChild(haberYapici(datum));
+  articles.appendChild(haberYapici(datum));
 }
 
 
