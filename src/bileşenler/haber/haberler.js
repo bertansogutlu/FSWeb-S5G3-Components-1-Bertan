@@ -197,87 +197,47 @@ const data = [
 //   haberYapici(datum)
 // }
 
-// function haberYapici(obj) {
+function haberYapici(obj) {
   
-//   const newsDiv = document.createElement("div");
-//   const newsH2 = document.createElement("h2");
-//   const newsPT = document.createElement("p");
-//   const newsP1 = document.createElement("p");
-//   const newsP2 = document.createElement("p");
-//   const newsP3 = document.createElement("p");
-//   const newsSpan = document.createElement("span");
+  const newsDiv = document.createElement("div");
+  const newsH2 = document.createElement("h2");
+  const newsPT = document.createElement("p");
+  const newsP1 = document.createElement("p");
+  const newsP2 = document.createElement("p");
+  const newsP3 = document.createElement("p");
+  const newsSpan = document.createElement("span");
 
-//   newsDiv.className = 'article';
-//   newsPT.className = 'article date';
-//   newsSpan.className = 'article expandButton';
+  newsDiv.className = 'article';
+  newsPT.className = 'article date';
+  newsSpan.className = 'article expandButton';
 
-//   newsH2.textContent = obj.baslik;
-//   newsPT.textContent = obj.tarih;
-//   newsP1.textContent = obj.ilkParagraf;
-//   newsP2.textContent = obj.ikinciParagraf;
-//   newsP3.textContent = obj.ucuncuParagraf;
+  newsH2.textContent = obj.baslik;
+  newsPT.textContent = obj.tarih;
+  newsP1.textContent = obj.ilkParagraf;
+  newsP2.textContent = obj.ikinciParagraf;
+  newsP3.textContent = obj.ucuncuParagraf;
+  newsSpan.textContent = "+";
 
-//   newsDiv.appendChild(newsH2);
-//   newsDiv.appendChild(newsPT);
-//   newsDiv.appendChild(newsP1);
-//   newsDiv.appendChild(newsP2);
-//   newsDiv.appendChild(newsP3);
-//   newsDiv.appendChild(newsSpan);
+  newsDiv.appendChild(newsH2);
+  newsDiv.appendChild(newsPT);
+  newsDiv.appendChild(newsP1);
+  newsDiv.appendChild(newsP2);
+  newsDiv.appendChild(newsP3);
+  newsDiv.appendChild(newsSpan);
 
-//   newsSpan.addEventListener("click", (event) => {
-//     newsDiv.classList.toggle("article-open");
-//   })
+  newsSpan.addEventListener("click", (event) => {
+    newsDiv.classList.toggle("article-open");
+  })
 
-// return newsDiv;  
+return newsDiv;  
 
-// }
+}
 
-// const body = document.querySelector("body");
+const body = document.querySelector("body");
 
-// for (let datum of data) {
-//   body.appendChild(haberYapici(datum));
-// }
-
-// function haberYapici(obj) {
-  
-//   const newsDiv = document.createElement("div");
-//   const newsH2 = document.createElement("h2");
-//   const newsPT = document.createElement("p");
-//   const newsP1 = document.createElement("p");
-//   const newsP2 = document.createElement("p");
-//   const newsP3 = document.createElement("p");
-//   const newsSpan = document.createElement("span");
-
-//   newsDiv.className = 'article';
-//   newsPT.className = 'article date';
-//   newsSpan.className = 'article expandButton';
-
-//   newsH2.textContent = obj.baslik;
-//   newsPT.textContent = obj.tarih;
-//   newsP1.textContent = obj.ilkParagraf;
-//   newsP2.textContent = obj.ikinciParagraf;
-//   newsP3.textContent = obj.ucuncuParagraf;
-
-//   newsDiv.appendChild(newsH2);
-//   newsDiv.appendChild(newsPT);
-//   newsDiv.appendChild(newsP1);
-//   newsDiv.appendChild(newsP2);
-//   newsDiv.appendChild(newsP3);
-//   newsDiv.appendChild(newsSpan);
-
-//   newsSpan.addEventListener("click", (event) => {
-//     newsDiv.classList.toggle("article-open");
-//   })
-
-// return newsDiv;  
-
-// }
-
-// const body = document.querySelector("body");
-
-// for (let datum of data) {
-//   body.appendChild(haberYapici(datum));
-// }
+for (let datum of data) {
+  body.appendChild(haberYapici(datum));
+}
 
 
 // function haberYapici(obj) {
