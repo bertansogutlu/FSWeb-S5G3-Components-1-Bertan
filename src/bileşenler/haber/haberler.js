@@ -126,7 +126,7 @@ function haberYapici(arr) {
     const newsP3 = document.createElement("p");
     const newsSpan = document.createElement("span");
 
-    newsDiv.className = 'articles';
+    newsDiv.className = 'article';
     newsPT.className = 'article date';
     newsSpan.className = 'article expandButton';
 
@@ -142,6 +142,10 @@ function haberYapici(arr) {
     newsDiv.appendChild(newsP2);
     newsDiv.appendChild(newsP3);
     newsDiv.appendChild(newsSpan);
+
+    newsSpan.addEventListener("click", (event) => {
+      newsDiv.classList.add("article-open");
+    })
 
     const body = document.querySelector("body");
     body.appendChild(newsDiv);
