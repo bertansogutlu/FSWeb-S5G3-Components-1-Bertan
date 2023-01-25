@@ -55,5 +55,3 @@ function menuYapici(arr) {
 const menu = menuYapici(menuElemanlari);
 const header = document.querySelector(".header");
 header.appendChild(menu);
-
-console.log(header)
