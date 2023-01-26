@@ -208,8 +208,8 @@ function haberYapici(obj) {
   const newsSpan = document.createElement("span");
 
   newsDiv.className = 'article';
-  newsPT.className = 'article date';
-  newsSpan.className = 'article expandButton';
+  newsPT.className = 'date';
+  newsSpan.className = 'expandButton';
 
   newsH2.textContent = obj.baslik;
   newsPT.textContent = obj.tarih;
